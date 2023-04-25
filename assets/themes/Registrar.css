@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+    
+}
+
+body {
+  background: rgb(243,29,93);
+  background: linear-gradient(0deg, rgba(243,29,93,1) 0%, rgba(224,28,68,1) 35%, rgba(185,26,108,1) 100%);
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+}
+
+header {
+  margin: 50px;
+}
+
+#voltar-login {
+  font-size: 20px;
+  color: rgb(69, 169, 216);
+  text-decoration: none;
+  outline: none;
+}
+
+#voltar-login:hover {
+  color: white;
+}
+
+
+
+.container {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  /* margin-top: 100px; */
+  margin: 50px auto;
+}
+
+.header {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+    
+}
+
+#nome-banco {
+  font-size: 34px;
+}
+
+#data-de-nascimento input{
+  cursor: pointer;
+}
+
+
+.formulario {
+  padding: 20px;
+  height: fit-content;
+}
+
+
+.controle-do-formulario {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+
+}
+
+.controle-do-formulario label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.controle-do-formulario input{
+  border: 2px solid #f0f0f0;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 40.6%;
+  right: 100px;
+  cursor: pointer;
+  color: #f31d5d;
+  visibility: visible;
+}
+
+.fa-eye:hover{
+  cursor: pointer;
+  color: #3b3b3b;
+}
+
+.controle-do-formulario i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.controle-do-formulario-genero i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden
+}
+  
+.controle-do-formulario small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+}
+
+.controle-do-formulario-genero small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.formulario button {
+  background: linear-gradient(0deg, rgba(243,29,93,1) 0%, rgba(224,28,68,1) 35%, rgba(185,26,108,1) 100%);
+  border: 2px solid #f31d5d;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+ 
+}
+
+.formulario button:hover{
+  background: #fff;
+  color: #f31d5d;
+  transition: all .5s ease-out;
+}
+
+
+.controle-do-formulario-genero input{
+  cursor: pointer;
+}
+
+  /* Sucesso e Erro - TODOS OS INPUTS */
+.controle-do-formulario.success input {
+  border-color: #2ecc71;
+}
+  
+.controle-do-formulario.error input {
+  border-color: #e74c3c;
+}
+  
+.controle-do-formulario.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+  
+.controle-do-formulario.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+
+.controle-do-formulario.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.controle-do-formulario.success small {
+  visibility: hidden;
+}
+
+
+/* Só Input genero - não estão habilitados no JavaScript por enquanto */
+.controle-do-formulario-genero.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+
+.controle-do-formulario-genero.success input {
+  border-color: #2ecc71;
+}
+  
+.controle-do-formulario-genero.error input {
+  border-color: #e74c3c;
+}
+  
+.controle-do-formulario-genero.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+  
+.controle-do-formulario-genero.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+  

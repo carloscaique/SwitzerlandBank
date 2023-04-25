@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/themes/Login.css">
+</head>
+<body>
+    <div class="container">
+        <form class="formulario-login">
+                <div class="login" id="nome-login">            
+                    <br>
+                        <h1>Switzerland Bank</h1> 
+                        <p>Login</p>
+                    <br>
+                </div>
+                <div class="login">
+                    <label for="cpf-ou-email" id="labelCpfOuEmail">Email/CPF: </label>
+                    <input type="text" id="cpf-ou-email" name="cpf-ou-email" placeholder="Digite seu email ou CPF...">
+                    <br>
+                </div>
+                <div class="login">
+                    <label for="senha" id="labelSenha">Senha: </label>
+                    <i id="ver-senha-login" class="fa fa-eye" aria-hidden="true"></i>
+                    <!-- <i id="ocultar-senha-login" class="fa fa-eye-slash" aria-hidden="true"></i> -->
+                    <input type="password" id="senha" class="senha" placeholder="Digite sua senha...">
+                    
+                    <br>
+                </div>
+                <div class="login">
+                    <button type="submit" id="botao-login" name="botao-login" onclick='entrar()'>Login</button>
+                    <br>
+                    <br>
+                    <a id="esqueci-senha" href="">Esqueci a senha</a>
+                </div>
+                <div class="login">
+                    
+                    Não possuí uma conta? <a id="link-registrar" target="_blank" href="/pages/Registrar.html">Abra uma agora</a>
+                    <br>
+                </div>
+        </form>
+    </div>
+    <script src="/assets/scripts/Login.js"></script>
+</body>
+</html>

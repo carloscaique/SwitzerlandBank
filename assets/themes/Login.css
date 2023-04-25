@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+      
+  }
+
+body {
+  
+  background: rgb(243,29,93);
+  background: linear-gradient(0deg, rgba(243,29,93,1) 0%, rgba(224,28,68,1) 35%, rgba(185,26,108,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.formulario-login {
+  padding: 20px;
+  height: fit-content;
+}
+
+.login {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+
+}
+
+.login label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.login input {
+  border: 2px solid #f0f0f0;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.login i {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  color: #3b3b3b;
+}
+
+.fa-eye {
+  
+}
+
+.fa-eye:hover{
+  cursor: pointer;
+  color: #f31d5d;
+}
+
+/*
+.fa-eye-slash{
+  visibility: hidden;
+}
+
+.fa-eye-slash:hover{
+  cursor: pointer;
+  color: #f31d5d;
+  visibility: hidden;
+}
+*/
+
+h1{
+  text-align: center;
+}
+
+
+h1:hover{
+  color: #f31d5d;
+  cursor:default;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #d61751;
+}
+
+
+
+button {
+  background: linear-gradient(0deg, rgba(243,29,93,1) 0%, rgba(224,28,68,1) 35%, rgba(185,26,108,1) 100%);
+  border: 2px solid #f31d5d;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .4s ease-out;
+  margin-top: 20px;
+}
+
+button:hover{
+  background: #fff;
+  color: #f31d5d;
+  transition: all .5s ease-out;
+}
+
+
+
+#esqueci-senha:hover {
+  color:rgb(93, 184, 226)
+}
+
+
+
+#link-registrar:hover {
+  color:rgb(93, 184, 226)
+}
+

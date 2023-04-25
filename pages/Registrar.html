@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/themes/Registrar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!--Link do font Awesome (banco de icones)-->
+    <title>Registrar-se</title>
+</head>
+<body>
+
+    <header>
+        <a id="voltar-login" href="/Index.html">Voltar</a>
+    </header>
+    
+    <!-- FORMULÁRIO DE REGISTRO-->
+    <!-- Cabeçalho "Abrir Uma Conta"-->
+    <div class="container" id="registrar-se">
+
+        <div class="header"> 
+            <br>
+            <h2 id="nome-banco">Switzerland Bank</h2>
+            <p id="dados-pessoais-sub">Dados pessoais</p>
+            <br>
+        </div>
+
+    <!-- Campos de preenchimento-->    
+        <form id="formulario" class="formulario" name="formulario">
+                <!--Nome Completo-->
+                <div class="controle-do-formulario">
+                    <label for="nomeCompleto" id="label-nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" placeholder="Digite seu nome completo...">
+                    <i class="fas fa-exclamation-circle"></i> <!--ícone de erro-->
+                    <i class="fas fa-check-circle"></i> <!--ícone de acerto-->
+                    <small></small>
+                </div>
+                <!--CPF-->
+                <div class="controle-do-formulario">
+                    <label for="cpf" id="label-cpf">CPF:</label>
+                    <input type="int" name="cpf" id="cpf" placeholder="Digite seu CPF..">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <!--Nome da Mãe-->
+                <div class="controle-do-formulario">
+                    <label for="nomeDaMãe"  id="label-nome-da-mae">Nome da Mãe:</label>
+                    <input type="text" id="nome-da-mae" name="nome-da-mae" placeholder="Digite o nome da sua mãe...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <!--Data de Nascimento-->
+                <div class="controle-do-formulario">
+                    <label for="dataDeNascimento" id="label-data-de-nascimento">Data de Nascimento:</label>
+                    <input type="date" name="data-de-nascimento" id="data-de-nascimento"
+                        min="1923-01-01" max="2005-05-01">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <!--Gênero-->
+                <div class="controle-do-formulario-genero" id="genero" name="genero">
+                    <label for="genero" id="label-genero">Gênero: </label>
+                    <br>
+                    <br>
+                    <input type="radio" name="genero"   value="Masculino"> 
+                    <label for="genero" id="label-genero-masculino">Masculino</label>
+                    <br>
+                    <input type="radio" name="genero"   value="Feminino"> 
+                    <label for="genero" id="label-genero-feminino">Feminino</label>
+                    <br>
+                    <input type="radio" name="genero"   value="Outro"> 
+                    <label for="genero" id="label-genero-outro">Outro</label>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <br>
+                <!--Endereço-->
+                <div class="controle-do-formulario">
+                    <label for="endereco" id="label-endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite aonde você mora..">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <!--Email-->
+                <div class="controle-do-formulario">
+                    <label for="email" id="label-email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu melhor email...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <!--Senha-->
+                <div class="controle-do-formulario">
+                    <label for="senha" id="label-senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite uma senha...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+                <!--Confirmação de Senha-->
+                <div class="controle-do-formulario">
+                    <label for="confirmacaoDeSenha" id="label-confirmacao-de-senha">Confirmação de senha:</label>
+                    <input type="password" name="confirmacao-de-senha" id="confirmacao-de-senha" placeholder="Confirme sua senha...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small></small>
+                </div>
+            <button type="submit" id="botao-registrar" name="botao-registrar" onclick='registrar()'>Abrir conta</button>
+        </form>
+    </div>
+    
+    <!--link para ter acesso aos ícones de sucesso e erro-->
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous">
+    </script>
+
+    <!--link JavaScript-->
+    <script src="/assets/scripts/Registrar.js"></script>
+</body>
+</html>
