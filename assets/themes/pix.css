@@ -1,0 +1,109 @@
+h1 {
+    font-style: oblique;
+    font-size: 44px;
+    color: white;
+
+}
+
+hr {
+    box-shadow: 15px 15px 15px #000000;
+}
+
+#opcoes button {
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+#transferir {
+    margin-right: 100px;
+}
+
+#cobrar {
+    margin-right: 100px;
+}
+
+#receber {
+    margin-right: 100px;
+}
+
+#opcao_Chaves {
+    display: flex;
+    justify-content: center;
+}
+
+#chave_Aleatorio {
+    margin-right: 100px;
+}
+
+#chave_Cpf {
+    margin-right: 100px;
+}
+
+#chave_Telefone {
+    margin-right: 100px;
+}
+
+#exibir_Chave {
+    text-align: center;
+}
+
+#escolhas_Chave {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#deletar_Chave {
+    color: red;
+}
+
+#criar_Chave {
+    margin-right: 20px;
+}
+
+#deletar_Chave {
+    margin-right: 20px;
+}
+
+.container_Pix button {
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+
+
+}
+
+.container_Pix h4 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+    
+}
+
+header nav a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    right: 580px
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#escolhas_Chave button {
+    cursor: pointer;
+}

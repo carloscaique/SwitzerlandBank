@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switzerland Bank /Pix</title>
+  <link rel="stylesheet" href="/assets/themes/pix.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="">Voltar</a>
+    </nav>
+    <h1>Pix <span class="material-icons">pix</span></h1>
+  </header>
+  <br>
+  <br>
+  <br>
+  <div id="opcoes">
+    <button type="button" id="transferir">Transferir <span class="material-icons">payments</span></button>
+    <button type="button" id="cobrar">Cobrar <span class="material-icons">message</span></button>
+    <button type="button" id="receber">Receber <span class="material-icons">attach_money</span></button>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="container_Pix">
+    <h4 class="chaves_pix">Chaves pix <span class="material-icons">key</span></h4>
+
+
+    <div class="opcao_Chaves">
+      <button type="button" id="chave_Aleatorio">Aleatório <span class="material-icons">shuffle</span></button>
+      <button type="button" id="chave_Cpf">CPF <span class="material-icons">person</span></button>
+      <button type="button" id="chave_Telefone">Número de telefone <span class="material-icons">phone</span></button>
+    </div>
+  </div>
+  <br>
+
+  <div class="container_Results">
+    <h5>Chave escolhida:</h5>
+    <div id="chave_Escolhida">
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="escolhas_Chave">
+    <button id="criar_Chave">Criar chave</button>
+    <button id="deletar_Chave">Deletar chave</button>
+  </div>
+  <script src="/assets/scripts/pix.js"></script>
+
+</body>
+
+</html>
