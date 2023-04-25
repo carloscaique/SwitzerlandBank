@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  --swits-background-color: #FEF2F4;
+  --swits-principal-color: #D14D72;
+  --swits-secundary-color: #FFABAB;
+
+  --swits-principal-font: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--swits-principal-font);
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--swits-background-color);
+}
+
+/**
+ * Header style
+ * ==================================================
+ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--swits-principal-color);
+  height: 100px;
+  color: var(--swits-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+#header-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+#back-link {
+  color: var(--swits-background-color);
+}
+#back-link:hover {
+  text-decoration: underline;
+}
+
+#title {
+  color: var(--swits-background-color);
+}
+
+#download-icon {
+  width: 32px;
+}
+
+/**
+ * Main style
+ * ==================================================
+ */
+main {
+  position: relative;
+  top: 100px;
+  background-color: #fff;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: fit-content;
+  padding: 50px;
+  box-shadow: 0 0 10px #00000010;
+}
+
+table {
+  width: 100%;
+}
+
+#table-header {
+  display: flex;
+  width: 100%;
+  background-color: var(--swits-secundary-color);
+  padding: 24px 0;
+  text-transform: uppercase;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: 24px 0;
+}
+.table-row:nth-of-type(odd) {
+  background-color: var(--swits-background-color);
+}
+
+th, td {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.data-type {
+  font-weight: 500;
+}
+
+.data-amount-transference {
+  font-weight: 500;
+  color: #d14d4d;
+}
+
+.data-amount-deposit {
+  font-weight: 500;
+  color: #4ad14a;
+}

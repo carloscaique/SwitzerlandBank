@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1100px) {
+  #header-layout {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    padding: 50px 0;
+  }
+}
