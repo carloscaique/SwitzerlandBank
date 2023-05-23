@@ -207,4 +207,23 @@ header {
   color: #e74c3c;
   visibility: visible;
 }
+
+#msgError{
+  text-align: center;
+  color: #e74c3c;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #2ecc71;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
   

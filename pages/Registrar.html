@@ -29,7 +29,10 @@
             <h2 id="nome-banco">Switzerland Bank</h2>
             <p id="dados-pessoais-sub">Dados pessoais</p>
             <br>
+            <div id='msgError'></div>
+            <div id='msgSuccess'></div>
         </div>
+        
 
     <!-- Campos de preenchimento-->    
         <form id="formulario" class="formulario" name="formulario">
@@ -62,8 +65,6 @@
                     <label for="dataDeNascimento" id="label-data-de-nascimento">Data de Nascimento:</label>
                     <input type="date" name="data-de-nascimento" id="data-de-nascimento"
                         min="1923-01-01" max="2005-05-01">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
                     <small></small>
                 </div>
                 <!--Gênero-->
@@ -79,8 +80,6 @@
                     <br>
                     <input type="radio" name="genero"   value="Outro"> 
                     <label for="genero" id="label-genero-outro">Outro</label>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
                     <small></small>
                 </div>
                 <br>

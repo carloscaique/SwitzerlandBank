@@ -62,9 +62,9 @@ body {
   color: #3b3b3b;
 }
 
-.fa-eye {
+/*.fa-eye {
   
-}
+}*/
 
 .fa-eye:hover{
   cursor: pointer;
@@ -132,3 +132,11 @@ button:hover{
   color:rgb(93, 184, 226)
 }
 
+#msgError{
+  text-align: center;
+  color: #e74c3c;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
