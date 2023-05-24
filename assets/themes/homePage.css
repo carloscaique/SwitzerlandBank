@@ -14,7 +14,7 @@
 
 .navbar{
     width: 85%;
-    margin: auto;
+    margin: 0 auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
@@ -57,36 +57,36 @@
 
 /*Animação de aumentar o "Sair"*/
 
-.navbar:hover {
+.navbar ul li:hover {
     font-size: 1.2em;
     transition: ease all 0.3s;
 }
   
   
   
-.navbar:not(:hover) {
+.navbar ul li:not(:hover) {
     transition: ease all 0.3s;
 }
 
 /*-------------fim----------------*/
 
 .content{
-    width: 900px;
+    width: 85%;
     position: absolute;
-    top: 50%;
+    top: 60%;
+    left: 6%;
     transform: translateY(-50%);
     text-align: center;
     color: white;
 }
 
 .content h1{
-    font-size: 70px;
-    margin-top: 80px;
+    font-size: 3em; /* estático - 70px */
     text-transform: uppercase;
 }
 
 .content p{
-    font-size: 20px;
+    font-size: 1.25em; /* estático - 20px */
     margin: 20px auto;
     font-weight: 400;
     line-height: 25px;
@@ -126,7 +126,7 @@ span{
 button:hover span{
     width: 100%;
 }
-
+/* 
 button:hover{
     border: none;
     font-size: 1.05em;
@@ -135,4 +135,4 @@ button:hover{
 
 button:not(:hover){
     transition: ease all 0.3s;
-}
+} */
