@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
-  --swits-background-color: #FEF2F4;
-  --swits-principal-color: #D14D72;
-  --swits-secundary-color: #FFABAB;
+  --swits-background-color: #eee;
+  --swits-principal-color: #f31d5d;
+  --swits-secundary-color: #f31d5d;
 
-  --swits-principal-font: 'Montserrat', sans-serif;
+  --swits-principal-font: 'Poppins', sans-serif;
 }
 
 * {
@@ -46,10 +46,56 @@ header {
 
 #back-link {
   color: var(--swits-background-color);
+  text-transform: uppercase;
 }
+
+#header-layout ul {
+width: 80px;
+}
+
+/* MODIFICANDO O VOLTAR - AMANDA (baseado no código do Caique)*/
+
+#header-layout ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+#header-layout ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+#header-layout ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #eee;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+#header-layout ul li:hover:after{
+  width: 100%;
+}
+
 #back-link:hover {
-  text-decoration: underline;
+  font-size: 1.1em;
+  transition: ease all 0.3s;
 }
+
+
+
+#back-link:not(:hover) {
+  transition: ease all 0.3s;
+}
+
+/*------------------fim da modificação----------------------*/
 
 #title {
   color: var(--swits-background-color);
@@ -59,6 +105,15 @@ header {
   width: 32px;
 }
 
+#download-icon:hover {
+  transform: scale(1.2);
+  transition: ease all 0.3s;
+  cursor: pointer;
+}
+
+#download-icon:not(:hover) {
+  transition: ease all 0.3s;
+}
 /**
  * Main style
  * ==================================================
@@ -86,8 +141,8 @@ table {
   padding: 24px 0;
   text-transform: uppercase;
   color: #fff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .table-row {
@@ -110,10 +165,14 @@ th, td {
 
 .data-amount-transference {
   font-weight: 500;
-  color: #d14d4d;
+  color: #e74c3c;
 }
 
 .data-amount-deposit {
   font-weight: 500;
   color: #4ad14a;
 }
+
+
+
+

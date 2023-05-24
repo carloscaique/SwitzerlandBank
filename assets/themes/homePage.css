@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .banner{
@@ -18,11 +18,11 @@
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .logo{
-    width: 120px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -43,19 +43,35 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #b1052a;
+    background: #e40c4c;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -5px;
     transition: 0.5s;
+    transform: scale(1.05);
 }
 
 .navbar ul li:hover:after{
     width: 100%;
 }
 
+/*Animação de aumentar o "Sair"*/
+
+.navbar:hover {
+    font-size: 1.2em;
+    transition: ease all 0.3s;
+}
+  
+  
+  
+.navbar:not(:hover) {
+    transition: ease all 0.3s;
+}
+
+/*-------------fim----------------*/
+
 .content{
-    width: 100%;
+    width: 900px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -72,10 +88,12 @@
 .content p{
     font-size: 20px;
     margin: 20px auto;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 25px;
     text-transform: uppercase;
 }
+
+/*Aumentar letra quando faz o hover*/
 
 button{
     width: 200px;
@@ -84,16 +102,17 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #b1052a;
+    border: 2px solid #e40c4c;
     background: transparent;
     color: white;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    font-size: 1em;
 }
 
 span{
-    background: #b1052a;
+    background: #e40c4c;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -110,4 +129,10 @@ button:hover span{
 
 button:hover{
     border: none;
+    font-size: 1.05em;
+    transition: ease all 0.3s;
+}
+
+button:not(:hover){
+    transition: ease all 0.3s;
 }

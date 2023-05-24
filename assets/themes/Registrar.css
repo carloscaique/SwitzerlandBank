@@ -25,6 +25,7 @@ header {
   color: rgb(69, 169, 216);
   text-decoration: none;
   outline: none;
+  text-transform: uppercase;
 }
 
 #voltar-login:hover {
