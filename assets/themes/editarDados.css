@@ -1,0 +1,96 @@
+.voltar {
+    border: none;
+    padding: 10px;
+    background: none;
+    color: black;
+    cursor: pointer;
+}
+
+.voltar:hover {
+    color: red;
+}
+
+.voltar:active {
+    color: rgba(255, 0, 0, 0.459);
+}
+
+.cliente {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(163, 22, 22, 0.993);
+}
+
+.dados {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.editar {
+    border: none;
+    padding: 10px;
+    outline-color: black;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.editar:hover{
+    background-color: rgb(80, 77, 77);
+}
+
+.editar:active {
+    color: white;
+    background-color: rgb(177, 173, 173);
+}
+
+.deletar{
+    border: none;
+    padding: 10px;
+    outline-color: black;
+    background-color: rgba(163, 22, 22, 0.993);;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.deletar:hover {
+    background-color: rgba(255, 0, 0, 0.521);
+}
+
+.deletar:active {
+    color: white;
+    background-color: rgb(255, 120, 120);
+}
+
+.div {
+    text-align: center;
+}
+
+
+#aviso {
+    width: 300px;
+    background-color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+  }
+  
+  .escondido {
+    display: none;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+  }
