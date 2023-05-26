@@ -73,7 +73,7 @@
 .content{
     width: 85%;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 6%;
     transform: translateY(-50%);
     text-align: center;
@@ -91,6 +91,7 @@
     font-weight: 400;
     line-height: 25px;
     text-transform: uppercase;
+    justify-content: space-between;
 }
 
 /*Aumentar letra quando faz o hover*/
@@ -126,13 +127,14 @@ span{
 button:hover span{
     width: 100%;
 }
-/* 
+
 button:hover{
     border: none;
-    font-size: 1.05em;
+    transform: scale(1.09);
     transition: ease all 0.3s;
 }
 
 button:not(:hover){
     transition: ease all 0.3s;
-} */
+} 
+

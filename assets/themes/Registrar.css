@@ -17,19 +17,53 @@ body {
 }
 
 header {
-  margin: 50px;
-}
-
-#voltar-login {
-  font-size: 20px;
-  color: rgb(69, 169, 216);
+  width: 92%;
+  margin: 0 auto;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  font-size: 1em;
   text-decoration: none;
-  outline: none;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
-#voltar-login:hover {
+
+header ul li{
+  list-style: none;
+  display: flex;
+  margin: 0 20px;
+  position: relative;
+}
+
+header ul li a{
+  text-decoration: none;
   color: white;
+}
+
+header ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+header ul li:hover:after{
+  width: 100%;
+}
+
+header ul li:hover {
+  transform: scale(1.05);
+  transition: ease all 0.3s;
+}
+
+cabecalho ul li:not(:hover) {
+  transition: ease all 0.3s;
 }
 
 
